@@ -76,7 +76,7 @@ function Portfolio({ lightMode }) {
                 <p className="text-lg font-bold mb-2">{description}</p>
                 {id !== 5 && (
                   <>
-                    <p className="text-sm text-gray-500">Stack: {stack}</p>
+                    <p className="text-sm text-white">Stack: {stack}</p>
                     <div className="flex items-center justify-center">
                       <a
                         href={demo}
@@ -97,7 +97,7 @@ function Portfolio({ lightMode }) {
                     </div>
                   </>
                 )}
-                {id === 5 && <p className="text-sm text-gray-500">{stack}</p>}
+                {id === 5 && <p className="text-sm text-white">{stack}</p>}
               </div>
             </div>
           ))}

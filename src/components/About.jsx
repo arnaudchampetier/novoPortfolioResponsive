@@ -28,7 +28,7 @@ function About({ lightMode }) {
           apporter ma contribution à la réalisation de projets ambitieux.
         </p>
         <br />
-        <p className="mb-48 md:mb-96">
+        <p className="mb-48 md:mb-96  text-cyan-300">
           Qualités : Autonome Passionné Curieux Communicatif Adaptable
         </p>
       </div>
