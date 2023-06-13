@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Larken Bold";
+  src: url("./fonts/larken-bold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Semplicita Medium";
+  src: url("./fonts/semplicita.medium.otf") format("opentype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
