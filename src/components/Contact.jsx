@@ -55,6 +55,9 @@ function Contact(props) {
             </button>
           </form>
         </div>
+        <p className="text-center text-white text-sm mt-8">
+          Design et développement réalisé par mes soins - Tous droits réservés ®{" "}
+        </p>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Meuah from "../assets/meuah1.jpg";
-import { FiSun, FiMoon } from "react-icons/fi";
 
 function Home({ lightMode, toggleLightMode }) {
   const homeClass = lightMode
@@ -43,16 +42,10 @@ function Home({ lightMode, toggleLightMode }) {
           <img
             src={Meuah}
             alt="meuah"
-            className="rounded-2xl mx-auto w-2/3 md:w-2/3 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer"
+            className="rounded-2xl mx-auto w-2/3 md:w-2/3 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-24"
           />
         </div>
       </div>
-      <button
-        onClick={toggleLightMode}
-        className="text-2xl text-gray-500 hover:text-gray-800"
-      >
-        {lightMode ? <FiMoon /> : <FiSun />}
-      </button>
     </div>
   );
 }
