@@ -52,27 +52,29 @@ function Experience(props) {
       name="experience"
       className={`${containerClassName} w-full h-screen min-h-screen`}
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div>
-          <p
-            className={`text-4xl font-bold font-larken border-b-4 border-gray-500 p-2 inline ${titleClassName}`}
-          >
-            Experience
-          </p>
-          <p className={`py-6 ${subtitleClassName}`}>
-            Technologies utilisées ...
-          </p>
-        </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:scale-105 bg-zinc-700 duration-700 py-2 rounded-lg ${style} w-38 h-38`}
+      <div className="mt-0  md:mb-0">
+        <div className="max-w-screen-lg p-4 mx-auto  flex flex-col justify-center w-full h-full  ">
+          <div>
+            <p
+              className={`text-4xl font-bold font-larken border-b-4 border-gray-500 p-2 inline ${titleClassName}`}
             >
-              <img src={src} alt={title} className="w-34 h-32 mx-auto" />
-              <p className="text-white">{title}</p>
-            </div>
-          ))}
+              Experience
+            </p>
+            <p className={`py-6 ${subtitleClassName}`}>
+              Technologies utilisées ...
+            </p>
+          </div>
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+            {techs.map(({ id, src, title, style }) => (
+              <div
+                key={id}
+                className={`shadow-md hover:scale-105 bg-zinc-700 duration-700 py-2 rounded-lg ${style} w-38 h-38`}
+              >
+                <img src={src} alt={title} className="w-34 h-32 mx-auto" />
+                <p className="text-white">{title}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

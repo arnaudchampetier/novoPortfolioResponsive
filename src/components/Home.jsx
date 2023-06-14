@@ -16,14 +16,14 @@ function Home({ lightMode, toggleLightMode }) {
       className={`h-screen w-full text-white ${homeClass}`}
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold font-semplicita text-white">
+        <div className="flex flex-col justify-center h-full mt-24 md:mt-0">
+          <h2 className="text-4xl sm:text-7xl font-bold font-semplicita text-white mt-36 md:mt-0">
             Arnaud Champetier
           </h2>
-          <p className="text-xl text-gray-700 px-4 max-w-md font-larken">
+          <p className="text-xl text-gray-700 px-4 max-w-md font-larken mb-8 md:mb-0">
             Hello ! je suis développeur web & mobile Full Stack
           </p>
-          <div>
+          <div className="mb-8 md:mb-0">
             <Link
               to="portfolio"
               smooth={true}
@@ -42,7 +42,7 @@ function Home({ lightMode, toggleLightMode }) {
           <img
             src={Meuah}
             alt="meuah"
-            className="rounded-2xl mx-auto w-2/3 md:w-2/3 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-24"
+            className="rounded-2xl mx-auto w-2/3 md:w-2/3 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
           />
         </div>
       </div>

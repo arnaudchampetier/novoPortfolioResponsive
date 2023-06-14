@@ -64,11 +64,11 @@ function Portfolio({ lightMode }) {
           <p className="py-6">Quelques projets en équipe & perso</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-96 md:mb-104">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-12 md:mb-96">
           {portfolio.map(({ id, src, description, stack, demo, code }) => (
             <div
               key={id}
-              className="shadow-lg hover:scale-105 duration-1000 shadow-gray-700 rounded-lg"
+              className="shadow-lg hover:scale-105 duration-1000 shadow-gray-700 rounded-lg "
             >
               <img
                 src={src}

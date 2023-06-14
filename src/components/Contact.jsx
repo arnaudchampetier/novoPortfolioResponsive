@@ -13,10 +13,10 @@ function Contact(props) {
     <div
       id="contact"
       name="contact"
-      className={`${containerClassName} w-full h-screen p-4 `}
+      className={`${containerClassName} w-full h-screen p-4  `}
     >
-      <div className="flex flex-col justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8 mt-96 md:mt-48">
+      <div className="flex flex-col justify-center max-w-screen-lg mx-auto h-full  ">
+        <div className="pb-8 mt-56 md:mt-48">
           <p
             className={`text-4xl font-bold inline border-b-4 border-gray-500 p-2 ${titleClassName}`}
           >
