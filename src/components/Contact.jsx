@@ -4,7 +4,7 @@ function Contact(props) {
   const { lightMode } = props;
 
   const containerClassName = lightMode
-    ? "bg-gray-500"
+    ? "bg-gradient-to-b from-cyan-900 via-cyan-700 to-cyan-500"
     : "bg-gradient-to-b from-black to-gray-800 text-white";
   const titleClassName = lightMode ? "text-black" : "text-white";
   const subtitleClassName = lightMode ? "text-gray-700" : "text-gray-500";
@@ -13,7 +13,7 @@ function Contact(props) {
     <div
       id="contact"
       name="contact"
-      className={`${containerClassName} w-full h-screen p-4`}
+      className={`${containerClassName} w-full h-screen p-4 `}
     >
       <div className="flex flex-col justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8 mt-96 md:mt-48">

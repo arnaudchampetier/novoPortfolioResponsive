@@ -1,6 +1,6 @@
 import React from "react";
 import ChezMaria from "../assets/chezmariascreen.png";
-import P1 from "../assets/P1screen.png";
+import P1 from "../assets/saltbae.png";
 import P2 from "../assets/P2screen.png";
 import P3 from "../assets/P3screen.png";
 import autres from "../assets/else.jpg";
@@ -51,7 +51,7 @@ function Portfolio({ lightMode }) {
   ];
 
   const portfolioClassName = lightMode
-    ? "bg-gray-500"
+    ? "bg-gradient-to-b from-cyan-900 via-cyan-700 to-cyan-500"
     : "bg-gradient-to-b from-black to-gray-800 text-white md:h-screen";
 
   return (
@@ -66,7 +66,10 @@ function Portfolio({ lightMode }) {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-96 md:mb-104">
           {portfolio.map(({ id, src, description, stack, demo, code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div
+              key={id}
+              className="shadow-lg hover:scale-105 duration-1000 shadow-gray-700 rounded-lg"
+            >
               <img
                 src={src}
                 alt="chezmaria"

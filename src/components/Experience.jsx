@@ -41,7 +41,7 @@ function Experience(props) {
   ];
 
   const containerClassName = lightMode
-    ? "bg-gray-500"
+    ? "bg-gradient-to-b from-cyan-500 via-cyan-700 to-cyan-900"
     : "bg-gradient-to-b from-gray-800 to-black text-white";
   const titleClassName = lightMode ? "text-black" : "text-white";
   const subtitleClassName = lightMode ? "text-gray-900" : "text-gray-500";
@@ -67,7 +67,7 @@ function Experience(props) {
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} w-38 h-38`}
+              className={`shadow-md hover:scale-105 bg-zinc-700 duration-700 py-2 rounded-lg ${style} w-38 h-38`}
             >
               <img src={src} alt={title} className="w-34 h-32 mx-auto" />
               <p className="text-white">{title}</p>

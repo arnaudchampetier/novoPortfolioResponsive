@@ -15,7 +15,18 @@ function NavBar() {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
-        <h1 className="text-5xl font-larken ml-2"> Portfolio </h1>
+        <h1 className="text-5xl font-larken ml-2 cursor-pointer">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            Portfolio
+          </Link>
+        </h1>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
@@ -51,7 +62,7 @@ text-gray-500 "
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl font-larken"
+              className="px-4 cursor-pointer capitalize py-6 text-4xl font-semplicita "
             >
               <Link
                 to={link}
