@@ -22,7 +22,7 @@ function Home({ lightMode, toggleLightMode }) {
             Arnaud Champetier
           </h2>
           <p className="text-xl text-gray-700 px-4 max-w-md font-larken">
-            Hello ! je suis développeur web & web mobile
+            Hello ! je suis développeur web & mobile Full Stack
           </p>
           <div>
             <Link
