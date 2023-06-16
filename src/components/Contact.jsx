@@ -13,10 +13,10 @@ function Contact(props) {
     <div
       id="contact"
       name="contact"
-      className={`${containerClassName} w-full h-screen p-4  `}
+      className={`${containerClassName} w-full min-h-screen flex flex-col items-center justify-center`}
     >
-      <div className="flex flex-col justify-center max-w-screen-lg mx-auto h-full  ">
-        <div className="pb-8 mt-56 md:mt-48">
+      <div className="max-w-screen-lg p-4">
+        <div className="pb-8">
           <p
             className={`text-4xl font-bold inline border-b-4 border-gray-500 p-2 ${titleClassName}`}
           >
@@ -30,27 +30,27 @@ function Contact(props) {
           <form
             action="https://getform.io/f/e8c06757-d7cd-472c-8f6f-e12b6dbf354e"
             method="POST"
-            className="flex flex-col w-full md:w-1/2"
+            className="flex flex-col w-full md:w-full "
           >
             <input
               type="text"
               name="name"
               placeholder="entrez votre nom"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
             />
             <input
               type="text"
               name="mail"
               placeholder="entrer votre mail"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
             />
             <textarea
               name="message"
               placeholder="entrer votre message"
               rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
             ></textarea>
-            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's go!
             </button>
           </form>
