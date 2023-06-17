@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact(props) {
   const { lightMode } = props;
@@ -8,6 +8,11 @@ function Contact(props) {
     : "bg-gradient-to-b from-black to-gray-800 text-white";
   const titleClassName = lightMode ? "text-black" : "text-white";
   const subtitleClassName = lightMode ? "text-gray-700" : "text-gray-500";
+  const [showLegalNotice, setShowLegalNotice] = useState(false);
+
+  const handleLegalNoticeClick = () => {
+    setShowLegalNotice(!showLegalNotice);
+  };
 
   return (
     <div
@@ -58,6 +63,60 @@ function Contact(props) {
         <p className="text-center text-white text-sm mt-8">
           Design et développement réalisé par mes soins - Tous droits réservés ®{" "}
         </p>
+        <div className="mt-4 text-center">
+          <button
+            className="text-gray-400 hover:text-white focus:outline-none"
+            onClick={handleLegalNoticeClick}
+          >
+            Mentions légales
+          </button>
+          {showLegalNotice && (
+            <div className="fixed inset-0 flex items-center justify-center z-50">
+              <div className="bg-gray-800 rounded-md p-4 w-3/4 sm:w-1/2 lg:w-1/2 lg:h-1/2 text-left ">
+                {" "}
+                <div className="flex justify-end">
+                  <button
+                    className="text-gray-400 hover:text-white focus:outline-none"
+                    onClick={handleLegalNoticeClick}
+                  >
+                    ✕
+                  </button>
+                </div>
+                <p className="text-white mb-10 font-larken font-semibold">
+                  Mentions Légales
+                </p>
+                <p className="text-white font-semplicita mb-2 font-semibold">
+                  Propriétaire
+                </p>
+                <p className="text-white font-semplicita mb-6">
+                  Monsieur Arnaud CHAMPETIER – Lyon, France
+                </p>
+                <p className="text-white font-semplicita mb-2 font-semibold">
+                  Responsable de la publication
+                </p>
+                <p className="text-white font-semplicita mb-6">
+                  Arnaud CHAMPETIER – arnaud.champetier9@gmail.com
+                </p>
+                <p className="text-white font-semplicita mb-2 font-semibold">
+                  Webmaster
+                </p>
+                <p className="text-white font-semplicita mb-6">
+                  Arnaud CHAMPETIER
+                </p>
+                <p className="text-white font-semplicita mb-2 font-semibold">
+                  Hébergement
+                </p>
+                <p className="text-white font-semplicita mb-8">
+                  Ce site est hébergé par Vercel
+                </p>
+                <p className="text-white font-semplicita italic">
+                  Ce site ne collecte aucune donnée personnelle et n'utilise pas
+                  de cookies.
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
