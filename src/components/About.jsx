@@ -18,7 +18,7 @@ function About({ lightMode }) {
             About
           </p>
         </div>
-        <p className="md:text-xl ">
+        <p className="md:text-xl font-semplicita ">
           Après une école de commerce et un parcours professionnel varié, j'ai
           suivi une formation intensive de développeur web & web mobile à la
           Wild Code School de Lyon. Passionné par les nouvelles technologies,

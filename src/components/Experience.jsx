@@ -18,13 +18,13 @@ function Experience(props) {
   const techs = [
     { id: 1, src: html, title: "HTML", style: "shadow-orange-500" },
     { id: 2, src: css, title: "CSS", style: "shadow-blue-500" },
-    { id: 7, src: javascript, title: "javascript", style: "shadow-pink-400" },
+    { id: 7, src: javascript, title: "Javascript", style: "shadow-pink-400" },
     { id: 3, src: Express, title: "Express", style: "shadow-yellow-500" },
     { id: 4, src: react, title: "React", style: "shadow-blue-600" },
     { id: 5, src: Node, title: "NodeJs", style: "shadow-sky-400" },
     { id: 6, src: GitHub, title: "GitHub", style: "shadow-white" },
-    { id: 8, src: tailwind, title: "tailwind", style: "shadow-gray-400" },
-    { id: 9, src: materialUi, title: "material UI", style: "shadow-cyan-500" },
+    { id: 8, src: tailwind, title: "Tailwind CSS", style: "shadow-gray-400" },
+    { id: 9, src: materialUi, title: "Material UI", style: "shadow-cyan-500" },
     { id: 10, src: Postman, title: " Postman", style: "shadow-red-200" },
     {
       id: 11,
@@ -35,7 +35,7 @@ function Experience(props) {
     {
       id: 12,
       src: autres,
-      title: "autres technologies",
+      title: "Autres technologies",
       style: "shadow-cyan-800",
     },
   ];
@@ -59,7 +59,7 @@ function Experience(props) {
           >
             Experience
           </p>
-          <p className={`py-6 ${subtitleClassName}`}>
+          <p className={`py-6 font-semplicita ${subtitleClassName}`}>
             Technologies utilisées ...
           </p>
         </div>
@@ -74,7 +74,7 @@ function Experience(props) {
                 alt={title}
                 className="w-full h-full aspect-w-1 aspect-h-1 mx-auto"
               />
-              <p className="text-white mt-4">{title}</p>
+              <p className="text-white mt-4 font-semplicita">{title}</p>
             </div>
           ))}
         </div>

@@ -61,10 +61,12 @@ function Portfolio({ lightMode }) {
           <p className="text-4xl font-bold font-larken inline border-b-4 border-gray-500 ">
             Portfolio
           </p>
-          <p className="py-6">Quelques projets en équipe & perso</p>
+          <p className="py-6 font-semplicita">
+            Quelques projets en équipe & perso
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-12 md:mb-96">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-12 md:mb-96 font-semplicita">
           {portfolio.map(({ id, src, description, stack, demo, code }) => (
             <div
               key={id}
