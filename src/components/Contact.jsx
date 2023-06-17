@@ -23,11 +23,11 @@ function Contact(props) {
       <div className="max-w-screen-lg p-4">
         <div className="pb-8">
           <p
-            className={`text-4xl font-bold inline border-b-4 border-gray-500 p-2 ${titleClassName}`}
+            className={`text-4xl font-larken font-bold inline border-b-4 border-gray-500 p-2 ${titleClassName}`}
           >
             Contact
           </p>
-          <p className={`py-6 ${subtitleClassName}`}>
+          <p className={`py-6 font-semplicita ${subtitleClassName}`}>
             Remplissez le formulaire pour me contacter !
           </p>
         </div>
@@ -40,22 +40,22 @@ function Contact(props) {
             <input
               type="text"
               name="name"
-              placeholder="entrez votre nom"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
+              placeholder="Entrez votre nom"
+              className="p-2 font-semplicita bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
             />
             <input
               type="text"
               name="mail"
-              placeholder="entrer votre mail"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
+              placeholder="Entrez votre mail"
+              className="p-2 font-semplicita bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
             />
             <textarea
               name="message"
-              placeholder="entrer votre message"
+              placeholder="Entrez votre message"
               rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
+              className="p-2 font-semplicita bg-transparent border-2 rounded-md text-white focus:outline-none mb-4"
             ></textarea>
-            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-white font-semplicita bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's go!
             </button>
           </form>
