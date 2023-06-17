@@ -17,7 +17,7 @@ function Home({ lightMode, toggleLightMode }) {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full mt-24 md:mt-0">
-          <h2 className="text-4xl sm:text-7xl font-bold font-semplicita text-white mt-36 md:mt-0">
+          <h2 className="text-4xl sm:text-7xl font-bold font-semplicita text-white mt-56 md:mt-0">
             Arnaud Champetier
           </h2>
           <p className="text-xl text-gray-700 px-4 max-w-md font-larken mb-8 md:mb-0">
