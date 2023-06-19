@@ -20,7 +20,7 @@ function Contact(props) {
       name="contact"
       className={`${containerClassName} w-full min-h-screen flex flex-col items-center justify-center`}
     >
-      <div className="max-w-screen-lg p-4">
+      <div className="mt-24 max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p
             className={`text-4xl font-larken font-bold inline border-b-4 border-gray-500 p-2 ${titleClassName}`}
