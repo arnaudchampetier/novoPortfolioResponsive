@@ -17,18 +17,22 @@ function Home({ lightMode, toggleLightMode }) {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full mt-24 md:mt-0">
-          <h2 className="text-4xl sm:text-7xl font-bold font-semplicita text-white mt-56 md:mt-0">
+          <h2 className="text-4xl sm:text-7xl font-light font-semplicita text-white mt-56 md:mt-0 mb-4">
             Arnaud Champetier
           </h2>
-          <p className="text-xl text-gray-700 px-4 max-w-md font-larken mb-8 md:mb-0">
-            Hello ! je suis développeur web & mobile Full Stack
+          <p className="text-xl text-gray-300 px-4 max-w-md font-semplicita mb-8 md:mb-4">
+            Bonjour ! Je suis développeur web & web mobile Full Stack, diplômé
+            du titre national professionnel DWWM (Développeur Web & Web Mobile).
+            <br /> <br /> N'hésitez pas à prendre contact avec moi pour tout
+            projet de collaboration. 🙂
           </p>
-          <div className="mb-8 md:mb-0">
+
+          <div className="mb-8 md:mb-0 ">
             <Link
               to="portfolio"
               smooth={true}
               duration={1000}
-              className="group text-white text-lg font-semplicita w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white text-lg font-semplicita font-bold uppercase w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">

@@ -10,6 +10,7 @@ import tailwind from "../assets/tailwind.jpg";
 import materialUi from "../assets/materialUI.png";
 import Postman from "../assets/Postman.png";
 import workbench from "../assets/workbench.jpg";
+import OVH from "../assets/OVHLogo.png";
 import autres from "../assets/autres1.png";
 
 function Experience(props) {
@@ -26,14 +27,16 @@ function Experience(props) {
     { id: 8, src: tailwind, title: "Tailwind CSS", style: "shadow-gray-400" },
     { id: 9, src: materialUi, title: "Material UI", style: "shadow-cyan-500" },
     { id: 10, src: Postman, title: " Postman", style: "shadow-red-200" },
+    { id: 11, src: OVH, title: " OVH", style: "shadow-red-200" },
+
     {
-      id: 11,
+      id: 12,
       src: workbench,
       title: "Workbench MySql",
       style: "shadow-orange-200",
     },
     {
-      id: 12,
+      id: 13,
       src: autres,
       title: "Autres technologies",
       style: "shadow-cyan-800",
@@ -55,15 +58,15 @@ function Experience(props) {
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div>
           <p
-            className={`text-4xl font-bold font-larken border-b-4 border-gray-500 p-2 inline ${titleClassName}`}
+            className={`text-4xl  font-larken border-b-4 border-gray-500 p-2 inline ${titleClassName}`}
           >
             Experience
           </p>
-          <p className={`py-6 font-semplicita ${subtitleClassName}`}>
+          <p className={`py-6 font-semplicita text-white ${subtitleClassName}`}>
             Technologies utilisées ...
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 cursor-pointer">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}

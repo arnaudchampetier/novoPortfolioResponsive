@@ -3,12 +3,22 @@ import ChezMaria from "../assets/chezmariascreen.png";
 import P1 from "../assets/saltbae.png";
 import P2 from "../assets/P2screen.png";
 import P3 from "../assets/P3screen.png";
+import MarineBruniereAvocate from "../assets/MBAvocate.png";
 import autres from "../assets/else.jpg";
 
 function Portfolio({ lightMode }) {
   const portfolio = [
     {
       id: 1,
+      src: MarineBruniereAvocate,
+      description:
+        "Projet freelance - Marine Brunière - Avocate en Droit Administratif",
+      stack: "React/TailWind, NodeJs, OVH",
+      demo: "https://bruniere-avocat.com/",
+      code: "https://github.com/arnaudchampetier/MarineBruniereAvocate",
+    },
+    {
+      id: 2,
       src: ChezMaria,
       description: "Projet freelance - Chez Maria Epicerie ardéchoise à Lyon",
       stack: "React/TailWind, NodeJs",
@@ -16,25 +26,25 @@ function Portfolio({ lightMode }) {
       code: "https://github.com/arnaudchampetier/chezmaria",
     },
     {
-      id: 2,
+      id: 3,
       src: P3,
       description:
-        "P3 - La Poste - Ligne Bleue Rendre accessible le numérique par l'apprentissage.",
+        "P3 - La Poste - Ligne Bleue Rendre accessible le numérique.",
       stack: "React/TailWind, Express/MySql, NodeJs",
       demo: "https://www.loom.com/embed/9df13ebb3b97415aa8820c9612dc9e3f",
       code: "https://github.com/WildCodeSchool/P3_La-Poste_Lyon_React_Sept_2022",
     },
     {
-      id: 3,
+      id: 4,
       src: P2,
       description:
-        "P2 - Wild On Track Service de création de carnet de voyage avec les vols, hôtels, restaurants et activités d'un séjour.",
+        "P2 - Wild On Track Service de création de carnet de voyage (vols, hôtels, restaurants et activités).",
       stack: "React/MaterialUi, ApiRest/NodeJs",
       demo: "https://www.loom.com/embed/99d0b6c469924bec9dfb79f2f343d5c5",
       code: "https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022",
     },
     {
-      id: 4,
+      id: 5,
       src: P1,
       description: "P1 - FFK Premier projet en équipe",
       stack: "Html/CSS/JavaScript",
@@ -42,7 +52,7 @@ function Portfolio({ lightMode }) {
       code: "https://github.com/ChaiDaryl/Project_Samourai",
     },
     {
-      id: 5,
+      id: 6,
       src: autres,
       description: "Autres réalisations et apprentissage",
       stack:
@@ -58,15 +68,15 @@ function Portfolio({ lightMode }) {
     <div id="portfolio" name="portfolio" className={portfolioClassName}>
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold font-larken inline border-b-4 border-gray-500 ">
-            Portfolio
+          <p className="text-4xl  font-larken inline border-b-4 border-gray-500 ">
+            Portfolio & Réalisations ...
           </p>
           <p className="py-6 font-semplicita">
-            Quelques projets en équipe & perso
+            Quelques projets en équipe et en Freelance
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-12 md:mb-96 font-semplicita">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-12 md:mb-96 font-semplicita cursor-pointer">
           {portfolio.map(({ id, src, description, stack, demo, code }) => (
             <div
               key={id}
@@ -79,9 +89,12 @@ function Portfolio({ lightMode }) {
               />
               <div className="p-4">
                 <p className="text-lg font-bold mb-2">{description}</p>
-                {id !== 5 && (
+                {id !== 6 && (
                   <>
+                    <div className="flex-grow"></div>
+
                     <p className="text-sm text-white">Stack: {stack}</p>
+
                     <div className="flex items-center justify-center">
                       <a
                         href={demo}
@@ -102,7 +115,7 @@ function Portfolio({ lightMode }) {
                     </div>
                   </>
                 )}
-                {id === 5 && <p className="text-sm text-white">{stack}</p>}
+                {id === 6 && <p className="text-sm text-white">{stack}</p>}
               </div>
             </div>
           ))}
