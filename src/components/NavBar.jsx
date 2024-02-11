@@ -13,7 +13,7 @@ function NavBar() {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-32 px-4 text-white bg-gray-900 fixed z-50 opacity-90">
       <div>
         <h1 className="text-5xl font-larken ml-2 cursor-pointer">
           <Link
