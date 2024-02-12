@@ -3,14 +3,14 @@ import React from "react";
 
 function About({ lightMode }) {
   const aboutClassName = lightMode
-    ? "bg-gradient-to-b from-cyan-500 via-cyan-700 to-cyan-900"
+    ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
     : "bg-gradient-to-b from-gray-800 to-black text-white";
 
   return (
     <div
       id="about"
       name="about"
-      className={`w-full h-screen ${aboutClassName}`}
+      className={`w-full h-screen text-white ${aboutClassName}`}
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center h-full md:h-1/2 w-full ">
         <div className="pb-8">

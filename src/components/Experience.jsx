@@ -44,9 +44,9 @@ function Experience(props) {
   ];
 
   const containerClassName = lightMode
-    ? "bg-gradient-to-b from-cyan-500 via-cyan-700 to-cyan-900"
+    ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
     : "bg-gradient-to-b from-gray-800 to-black text-white";
-  const titleClassName = lightMode ? "text-black" : "text-white";
+  const titleClassName = lightMode ? "text-white" : "text-white";
   const subtitleClassName = lightMode ? "text-gray-900" : "text-gray-500";
 
   return (

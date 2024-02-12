@@ -6,7 +6,7 @@ import Meuah from "../assets/meuah1.jpg";
 
 function Home({ lightMode, toggleLightMode }) {
   const homeClass = lightMode
-    ? "bg-gradient-to-b from-neutral-900 via-cyan-700 to-cyan-500"
+    ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
     : "bg-gradient-to-b from-black via-zinc-800 to-gray-800";
 
   return (

@@ -61,11 +61,15 @@ function Portfolio({ lightMode }) {
   ];
 
   const portfolioClassName = lightMode
-    ? "bg-gradient-to-b from-cyan-900 via-cyan-700 to-cyan-500"
+    ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
     : "bg-gradient-to-b from-black to-gray-800 text-white md:h-screen";
 
   return (
-    <div id="portfolio" name="portfolio" className={portfolioClassName}>
+    <div
+      id="portfolio"
+      name="portfolio"
+      className={`text-white ${portfolioClassName}`}
+    >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl  font-larken inline border-b-4 border-gray-500 ">

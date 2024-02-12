@@ -4,9 +4,9 @@ function Contact(props) {
   const { lightMode } = props;
 
   const containerClassName = lightMode
-    ? "bg-gradient-to-b from-cyan-900 via-cyan-700 to-cyan-500"
+    ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
     : "bg-gradient-to-b from-black to-gray-800 text-white";
-  const titleClassName = lightMode ? "text-black" : "text-white";
+  const titleClassName = lightMode ? "text-white" : "text-white";
   const subtitleClassName = lightMode ? "text-gray-700" : "text-gray-500";
   const [showLegalNotice, setShowLegalNotice] = useState(false);
 
