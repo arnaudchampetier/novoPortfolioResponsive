@@ -62,7 +62,9 @@ function Experience(props) {
           >
             Experience
           </p>
-          <p className={`py-6 font-semplicita text-white ${subtitleClassName}`}>
+          <p
+            className={`py-6 font-semplicita text-lg text-white ${subtitleClassName}`}
+          >
             Technologies utilisées ...
           </p>
         </div>

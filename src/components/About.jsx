@@ -30,7 +30,7 @@ function About({ lightMode }) {
           ambitieux.
         </p>
         <br />
-        <p className="mb-0 md:mb-0 text-lg animate-text bg-gradient-to-r from-teal-400 via-purple-400 to-orange-400 bg-clip-text text-transparent font-black">
+        <p className="mb-0 md:mb-0 md:mt-20 text-lg animate-text bg-gradient-to-r from-teal-200 via-purple-300 to-orange-500 bg-clip-text text-transparent font-black">
           Qualités : Autonome Passionné Curieux Communicatif Adaptable
         </p>
       </div>
