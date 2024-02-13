@@ -2,7 +2,7 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import Meuah from "../assets/meuah1.jpg";
+import Meuah from "../assets/meuahVert.png";
 
 function Home({ lightMode, toggleLightMode }) {
   const homeClass = lightMode
@@ -46,7 +46,7 @@ function Home({ lightMode, toggleLightMode }) {
           <img
             src={Meuah}
             alt="meuah"
-            className="rounded-2xl mx-auto w-2/3 md:w-2/3 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
+            className="rounded-2xl mx-auto w-1/2 md:w-1/2 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
           />
         </div>
       </div>

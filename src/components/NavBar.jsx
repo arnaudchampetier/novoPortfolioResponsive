@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/ACPortfolio1.png"; // Importez votre logo depuis le dossier assets
 
 function NavBar() {
   const [nav, setNav] = useState(false);
@@ -24,7 +25,11 @@ function NavBar() {
             offset={-70}
             duration={1000}
           >
-            Portfolio
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-auto max-h-32 cursor-pointer"
+            />
           </Link>
         </h1>
       </div>
