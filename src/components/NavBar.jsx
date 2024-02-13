@@ -37,7 +37,7 @@ function NavBar() {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer  font-larken uppercase  text-gray-500 hover-scale-105 duration-300"
+            className="px-4 cursor-pointer  font-larken uppercase  text-sky-700 hover-scale-105 duration-300"
           >
             <Link
               to={link}
