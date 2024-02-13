@@ -4,7 +4,7 @@ import React from "react";
 function About({ lightMode }) {
   const aboutClassName = lightMode
     ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
-    : "bg-gradient-to-b from-gray-800 to-black text-white";
+    : "bg-gradient-to-b from-gray-800 via-zinc-800 to-black text-white";
 
   return (
     <div

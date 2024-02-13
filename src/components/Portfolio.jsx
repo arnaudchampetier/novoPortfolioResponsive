@@ -62,7 +62,7 @@ function Portfolio({ lightMode }) {
 
   const portfolioClassName = lightMode
     ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
-    : "bg-gradient-to-b from-black to-gray-800 text-white h-full md:h-4/5";
+    : "bg-gradient-to-b from-black via-zinc-800 to-gray-800 text-white h-full md:h-4/5";
 
   return (
     <div
