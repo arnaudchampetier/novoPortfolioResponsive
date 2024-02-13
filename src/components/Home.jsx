@@ -6,8 +6,8 @@ import Meuah from "../assets/meuahVert.png";
 
 function Home({ lightMode, toggleLightMode }) {
   const homeClass = lightMode
-    ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
-    : "bg-gradient-to-b from-black via-zinc-800 to-gray-800";
+    ? "bg-gradient-to-b from-purple-900 via-sky-700 to-sky-900"
+    : "bg-gradient-to-b from-purple-900 via-zinc-800 to-gray-800";
 
   return (
     <div
@@ -32,10 +32,10 @@ function Home({ lightMode, toggleLightMode }) {
               to="portfolio"
               smooth={true}
               duration={1000}
-              className="group text-white text-lg font-semplicita font-bold uppercase w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-gray-300 text-lg hover:scale-110 duration-1000 font-semplicita font-bold uppercase w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-neutral-900 via-sky-800 to-neutral-900 cursor-pointer"
             >
               Portfolio
-              <span className="group-hover:rotate-90 duration-300">
+              <span className="group-hover:rotate-90 duration-1000">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-2" />
               </span>
             </Link>
