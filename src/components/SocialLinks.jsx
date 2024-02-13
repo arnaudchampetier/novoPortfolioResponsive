@@ -40,7 +40,7 @@ function SocialLinks() {
           CV <BsFillPersonLinesFill size={30} />{" "}
         </>
       ),
-      href: "/Arnaud-Champetier-CV-2023-YES.pdf",
+      href: "/ArnaudChampetierCV(2024).pdf",
       style: "rounded-br-md",
       download: true,
     },
