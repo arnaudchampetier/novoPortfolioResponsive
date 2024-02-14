@@ -16,8 +16,12 @@ function Home({ lightMode, toggleLightMode }) {
       className={`h-screen w-full text-white ${homeClass}`}
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full mt-24 md:mt-0">
-          <h2 className="text-3xl md:text-5xl font-light font-semplicita text-white mt-96 md:mt-0 mb-4">
+        <div className="flex flex-col justify-center h-full mt-48 md:mt-0">
+          <h2
+            className="text-3xl md:text-5xl font-light font-semplicita mt-72 md:mt-0 mb-4 
+          animate-text-gradient bg-gradient-to-r from-[#23284d] via-[#dcdfe4] to-[#cb9fe9] 
+          bg-[200%_auto] bg-clip-text text-transparent  relative cursor-pointer transition-all duration-1000  "
+          >
             Arnaud Champetier
           </h2>
           <p className="md:text-xl text-gray-300 px-4 max-w-md font-semplicita mb-8 md:mb-4">
@@ -32,7 +36,7 @@ function Home({ lightMode, toggleLightMode }) {
               to="portfolio"
               smooth={true}
               duration={1000}
-              className="group text-gray-300 text-lg hover:scale-110 duration-1000 font-semplicita font-bold uppercase w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-neutral-900 via-sky-800 to-neutral-900 cursor-pointer"
+              className="group text-gray-300 animate-pulse text-lg hover:scale-110 duration-1000 font-semplicita font-bold uppercase w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-neutral-900 via-sky-800 to-neutral-900 cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-1000">
@@ -46,7 +50,7 @@ function Home({ lightMode, toggleLightMode }) {
           <img
             src={Meuah}
             alt="meuah"
-            className="rounded-2xl mx-auto w-1/2 md:w-1/2 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
+            className="rounded-2xl mx-auto w-1/3 md:w-1/2 ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
           />
         </div>
       </div>

@@ -28,7 +28,7 @@ function NavBar() {
             <img
               src={logo}
               alt="Logo"
-              className="h-auto max-h-32 cursor-pointer"
+              className="h-auto max-h-24 cursor-pointer"
             />
           </Link>
         </h1>

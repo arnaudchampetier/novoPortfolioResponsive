@@ -46,7 +46,7 @@ function Experience(props) {
   const containerClassName = lightMode
     ? "bg-gradient-to-b from-sky-900 via-sky-700 to-sky-900"
     : "bg-gradient-to-b from-gray-800 via-zinc-800 to-gray-800 text-white";
-  const titleClassName = lightMode ? "text-white" : "text-white";
+  const titleClassName = lightMode ? "text-white " : "text-white";
   const subtitleClassName = lightMode ? "text-gray-900" : "text-gray-500";
 
   return (
@@ -58,7 +58,8 @@ function Experience(props) {
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div>
           <p
-            className={`text-4xl  font-larken border-b-4 border-gray-500 p-2 inline ${titleClassName}`}
+            className="text-4xl  font-larken border-b-4 border-gray-500 p-2 inline   animate-text-gradient bg-gradient-to-r from-[#23284d] via-[#dcdfe4] to-[#cb9fe9] 
+            bg-[200%_auto] bg-clip-text text-transparent  relative cursor-pointer transition-all duration-1000 "
           >
             Experience
           </p>
