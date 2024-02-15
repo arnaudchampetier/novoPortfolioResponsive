@@ -22,7 +22,7 @@ function About({ lightMode }) {
           </p>
         </div>
         <p
-          className="md:text-xl font-semplicita  bg-gradient-to-r from-[#c563b8] via-[#d6dde6] to-[#677dd4] 
+          className="md:text-xl font-semplicita  bg-gradient-to-r from-[#cfb6e6] via-[#d6dde6] to-[#677dd4] 
                 bg-[200%_auto] bg-clip-text text-transparent  relative cursor-pointer transition-all duration-1000  
                  "
         >
@@ -36,7 +36,7 @@ function About({ lightMode }) {
           contribution à la réalisation de projets complexes et ambitieux.
         </p>
         <br />
-        <p className="mb-0 md:mb-0 md:mt-20 text-lg animate-text bg-gradient-to-r from-teal-200 via-purple-300 to-orange-500 bg-clip-text text-transparent font-black">
+        <p className="mb-0 md:mb-0 md:mt-20 mt-8 text-lg animate-text bg-gradient-to-r from-teal-200 via-purple-300 to-orange-500 bg-clip-text text-transparent font-black">
           Qualités : Autonome Passionné Curieux Communicatif Adaptable
         </p>
       </div>

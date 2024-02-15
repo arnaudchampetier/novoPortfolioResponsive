@@ -28,7 +28,9 @@ function Contact(props) {
           >
             Contact
           </p>
-          <p className={`py-6 font-semplicita text-white ${subtitleClassName}`}>
+          <p
+            className={`py-6 font-semplicita text-white text-lg ${subtitleClassName}`}
+          >
             Remplissez le formulaire pour me contacter !
           </p>
         </div>

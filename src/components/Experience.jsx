@@ -75,7 +75,7 @@ function Experience(props) {
           ))}
         </div>
       </div>
-      <div class=" mt-12 font-semplicita text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
+      <div class=" mt-12 font-semplicita text-center mx-10 md:mx-0 text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/80 to-50% to-slate-200">
         J'utilise de nombreux autres outils, bibliothèques, SGBDR... tels que{" "}
         <span class="text-indigo-400 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
           <ul class="block animate-text-slide-6 text-left leading-tight [&_li]:block">
@@ -89,6 +89,7 @@ function Experience(props) {
             <li aria-hidden="true">Material UI</li>
           </ul>
         </span>
+        <p className="text-white text-center">...</p>
       </div>
     </div>
   );
