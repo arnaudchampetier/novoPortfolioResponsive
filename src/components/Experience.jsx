@@ -12,6 +12,7 @@ import Postman from "../assets/Postman.png";
 import workbench from "../assets/workbench.jpg";
 import OVH from "../assets/OVHLogo.png";
 import autres from "../assets/autres1.png";
+import GitLab from "../assets/Gitlab-logo.png";
 
 function Experience(props) {
   const { lightMode } = props;
@@ -21,20 +22,9 @@ function Experience(props) {
     { id: 2, src: css, title: "CSS", style: "shadow-blue-500" },
     { id: 7, src: javascript, title: "Javascript", style: "shadow-pink-400" },
     { id: 3, src: Express, title: "Express", style: "shadow-yellow-500" },
-    { id: 4, src: react, title: "React", style: "shadow-blue-600" },
+    { id: 4, src: react, title: "ReactJs", style: "shadow-blue-600" },
     { id: 5, src: Node, title: "NodeJs", style: "shadow-sky-400" },
-    { id: 6, src: GitHub, title: "GitHub", style: "shadow-white" },
-    { id: 8, src: tailwind, title: "Tailwind CSS", style: "shadow-gray-400" },
-    { id: 9, src: materialUi, title: "Material UI", style: "shadow-cyan-500" },
-    { id: 10, src: Postman, title: " Postman", style: "shadow-red-200" },
-    { id: 11, src: OVH, title: " OVH", style: "shadow-red-200" },
 
-    {
-      id: 12,
-      src: workbench,
-      title: "Workbench MySql",
-      style: "shadow-orange-200",
-    },
     {
       id: 13,
       src: autres,
@@ -66,14 +56,14 @@ function Experience(props) {
           <p
             className={`py-6 font-semplicita text-lg text-white ${subtitleClassName}`}
           >
-            Technologies utilisées ...
+            Langages, frameworks, maîtrisés ...
           </p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 cursor-pointer">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`flex-1 shadow-md hover:scale-105 bg-zinc-700 duration-700 py-2 rounded-lg ${style} md:w-44 md:h-44 w-24 h-24 mx-auto m-4`}
+              className={`flex-1 shadow-md hover:scale-105 duration-700 py-2 rounded-lg ${style} md:w-44 md:h-44 w-24 h-24 mx-auto m-4`}
             >
               <img
                 src={src}
@@ -84,6 +74,21 @@ function Experience(props) {
             </div>
           ))}
         </div>
+      </div>
+      <div class=" mt-12 font-semplicita text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
+        J'utilise de nombreux autres outils, bibliothèques, SGBDR... tels que{" "}
+        <span class="text-indigo-400 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+          <ul class="block animate-text-slide-6 text-left leading-tight [&_li]:block">
+            <li>GitHub</li>
+            <li>GitLab</li>
+            <li>PostMan</li>
+            <li>MySQL</li>
+
+            <li>OVH Cloud</li>
+            <li>Tailwind CSS</li>
+            <li aria-hidden="true">Material UI</li>
+          </ul>
+        </span>
       </div>
     </div>
   );
