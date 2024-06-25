@@ -52,7 +52,7 @@ function SocialLinks() {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-sky-900 hover:ml-[-10px] hover:rounded-r-md duration-800" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-sky-900 hover:ml-[-10px] hover:rounded-r-md duration-1000" +
               "" +
               style
             }

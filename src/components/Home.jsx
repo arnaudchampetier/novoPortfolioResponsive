@@ -2,7 +2,7 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import Meuah from "../assets/meuahVertCarré.png";
+import Meuah from "../assets/moiSafti.jpg";
 
 function Home({ lightMode, toggleLightMode }) {
   const homeClass = lightMode
@@ -18,7 +18,7 @@ function Home({ lightMode, toggleLightMode }) {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full mt-48 md:mt-0">
           <h2
-            className="text-3xl md:text-5xl font-light font-semplicita mt-72 md:mt-0 mb-4 
+            className="text-3xl md:text-5xl font-light font-semplicita mt-72 md:mt-0 mb-4
           animate-text-gradient bg-gradient-to-r from-[#23284d] via-[#dcdfe4] to-[#cb9fe9] 
           bg-[200%_auto] bg-clip-text text-transparent  relative cursor-pointer transition-all duration-1000  "
           >
@@ -50,7 +50,8 @@ function Home({ lightMode, toggleLightMode }) {
           <img
             src={Meuah}
             alt="meuah"
-            className="rounded-2xl mx-auto w-3/4 md:w-full md:ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
+            style={{ width: "170px", height: "auto" }} // ajustez la taille selon vos besoins
+            className="rounded-2xl mx-auto md:ml-4 transition-transform hover:rotate-12 duration-1000 cursor-pointer mb-64 md:mb-0"
           />
         </div>
       </div>
